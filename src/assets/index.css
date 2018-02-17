@@ -1,0 +1,206 @@
+
+body{
+    
+    background-color: #001200;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    
+    /* make text super sharp */
+    -webkit-font-smoothing: none;
+}
+
+li {
+    margin-top:  10px;
+    list-style: none;
+}
+
+
+.start {
+    animation-name: startLook;
+    animation-duration: 800ms;  
+    animation-iteration-count: infinite;
+}
+
+
+.mainTitle {
+     top:0px;
+    animation-name: intro;
+    animation-duration: 3s;  
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes startLook {
+    
+     0%   {opacity: 0}
+    100% {opacity: 1}
+    
+}
+
+@keyframes intro {
+    
+    0% {
+        
+        top:0px;
+        color:red;
+        
+    }
+    
+    50% {
+        top:30px;
+        color: white;
+    }
+    
+     
+    100% {
+        
+        top:0px;
+        color:red;
+        
+    }
+}
+
+
+.app{
+    
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  
+
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  color: grey
+}
+.flex-container{ 
+  
+  background-color: #001200;
+}
+.cell{
+  height: 2em;
+  width: 2em;
+ 
+}
+
+
+.level-1 {
+    background-image:  url(wall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.level-2 {
+    background-image:  url(2wall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.level-3 {
+    background-image:  url(3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.level-4 {
+    background-image:  url(4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.floor{
+  
+   background-image:url(tile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+.door{
+  background: red; 
+}
+
+.weapon {
+  
+  background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.enemy {
+    background:yellow;
+  background-image:url(skelly.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+  
+}
+
+
+.boss {
+      background-image:url(Untitled-1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+  
+}
+
+
+.exit {
+    background-image:url(stairs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+.powerUp {
+   background-image:url(potion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.player{
+ 
+   background-image:url(down.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.player_up{
+ 
+   background-image:url(up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.player_left{
+ 
+   background-image:url(left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.player_right{
+ 
+   background-image:url(right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+
+.box {
+    margin-left:20px;
+    margin-right: 20px;
+}
